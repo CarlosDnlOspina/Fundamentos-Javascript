@@ -78,7 +78,83 @@ console.log(`Este es un texto de
 varias lineas
 usando comillas invertidas`);
 
+//Tomando desiciones
+const age = 20;
+const isOldEnough = age >= 18;
 
 
+if (isOldEnough) {
+    console.log('Puede usar la licencia de conducir 😉🚗');
+} else {
+    console.log('🙃 No tienes permiso para manejar');
+}
 
+const birthYear = 1991;
+
+//local 
+if (birthYear <= 2000) {
+    let century = 20;
+} else {
+    let century = 21;
+}
+
+//Global
+let century;
+if (birthYear <= 2000) {
+    century = 20;
+} else {
+    century = 21;
+}
+
+const inputYear = '1991';
+console.log(Number(inputYear));
+console.log(Number('Carlos'));
+console.log(String(24));
+console.log('I am ' + 23 + ' years old')
+
+
+//valores falsos: 0, '', undefined, null, NaN
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean("Jonas"))
+console.log(Boolean({}))
+
+const money = 0;
+if (money) {
+    console.log("Puedes gastar 😅");
+}
+else {
+    console.log("No tienes dinero 😊");
+}
+
+let height;
+
+if (height) {
+    console.log("La variables está definidida");
+} else {
+    console.log("No está definida");
+}
+
+//Operadores de igualdad
+// == Igual  === Exactamente igual
+console.log(18 == '18')
+console.log(18 === '18')
+
+const number = Number(prompt("Ingresa un número"));
+console.log(number);
+
+if (number === 23) {
+    console.log("Funciona");
+}
+
+if (number !== 23) {
+    console.log("ingresó")
+}
+
+const hasDriverLicense = true;
+const hasGoodVision = true;
+
+console.log(hasDriverLicense && hasGoodVision);
+console.log(hasDriverLicense || hasGoodVision);
+console.log(!hasDriverLicense);
 

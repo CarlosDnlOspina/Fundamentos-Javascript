@@ -19,3 +19,24 @@ let jonhBMI = johnMass / (johnHeight ** 2);
 console.log(markBMI, jonhBMI);
 
 let markHigherBMI = markBMI > jonhBMI;
+
+if (markBMI > jonhBMI) {
+    console.log(`la masa corporal de Mark es 
+    ${markBMI} 😆`);
+} else {
+    console.log(`La masa corporal de John es ${jonhBMI} 🤣`);
+}
+const dolphinsScore = (96 + 108 + 89) / 3;
+const koalasScore = (88 + 91 + 110) / 3;
+const maxPoint = 100;
+
+if (dolphinsScore > koalasScore && dolphinsScore > maxPoint) {
+    console.log(`El ganador es Dolphin con ${dolphinsScore}`);
+} else if (dolphinsScore < koalasScore && koalasScore > maxPoint) {
+    console.log(`El ganador es Koala con ${koalasScore}`)
+} else if (dolphinsScore === koalasScore && dolphinsScore > maxPoint & koalasScore > maxPoint) {
+    console.log("Es un empate");
+} else {
+    console.log("Aún no llegan a los 100 puntos");
+}
+
