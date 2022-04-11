@@ -30,13 +30,18 @@ const dolphinsScore = (96 + 108 + 89) / 3;
 const koalasScore = (88 + 91 + 110) / 3;
 const maxPoint = 100;
 
-if (dolphinsScore > koalasScore && dolphinsScore > maxPoint) {
+if (dolphinsScore > koalasScore && dolphinsScore >= maxPoint) {
     console.log(`El ganador es Dolphin con ${dolphinsScore}`);
-} else if (dolphinsScore < koalasScore && koalasScore > maxPoint) {
+} else if (dolphinsScore < koalasScore && koalasScore >= maxPoint) {
     console.log(`El ganador es Koala con ${koalasScore}`)
-} else if (dolphinsScore === koalasScore && dolphinsScore > maxPoint & koalasScore > maxPoint) {
+} else if (dolphinsScore === koalasScore && dolphinsScore >= maxPoint & koalasScore >= maxPoint) {
     console.log("Es un empate");
 } else {
     console.log("Aún no llegan a los 100 puntos");
 }
 
+//Calculadora de propinas
+let bill = 275;
+
+let tip = bill >= 50 && bill <= 300 ? 15 : 20;
+console.log(`El valor de la factura es ${bill} con un propina de ${(tip * bill) / 100} y el total a pagar es de ${bill + ((tip * bill) / 100)}`)

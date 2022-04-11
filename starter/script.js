@@ -158,3 +158,25 @@ console.log(hasDriverLicense && hasGoodVision);
 console.log(hasDriverLicense || hasGoodVision);
 console.log(!hasDriverLicense);
 
+//Swicht 
+let today = 'monday';
+
+switch (today) {
+    case 'monday':
+        console.log('Today is monday');
+        break;
+    case 'Tuesday':
+        console.log('Today is tuesday');
+        break;
+    default: console.log('Add more days');
+}
+
+//Ternaria
+let ageTernaria = 13;
+let wine = true;
+const ageTernariaResult = ageTernaria > 10 ? console.log("It's bigger that 10") : console.log("It's lattest that 10");
+console.log(`Me gusta beber ${wine ? 'wine 🍷' : 'water 🤽'}`)
+
+
+
+
