@@ -178,5 +178,57 @@ const ageTernariaResult = ageTernaria > 10 ? console.log("It's bigger that 10") 
 console.log(`Me gusta beber ${wine ? 'wine 🍷' : 'water 🤽'}`)
 
 
+//Funciones
+function logger() {
+    console.log('Mi nombre es Carlos');
+}
+
+//Función con parametros
+function fruitProcessor(apples, oranges) {
+    const juice = `Jugo con ${apples} y ${oranges}`;
+    return juice;
+}
+
+const appleJuice = fruitProcessor(5, 0);
+console.log(appleJuice);
+
+const appleOrangeJuice = fruitProcessor(2, 4);
+console.log(appleOrangeJuice);
+
+//Declaración de una función
+function calAge(bithYear) {
+    return 2037 - birthYear;
+}
+
+const age1 = calAge(1995);
+
+//Función de expresión
+const calAge2 = function (birthYear) {
+    return 2037 - birthYear;
+}
+
+const age2 = calAge2(1991);
+
+console.log(age1, age2);
+
+//Arrow function
+const calAge3 = birthYear => 2037 - birthYear;
+const age3 = calAge3(1995);
+console.log(age3);
+
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+    const age = 2037 - birthYear;
+    const retirement = 65 - age;
+    return retirement;
+}
+
+const ageRetirement = yearsUntilRetirement(1945);
+
+
+
+
+
+
 
 

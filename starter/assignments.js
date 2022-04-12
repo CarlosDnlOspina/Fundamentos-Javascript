@@ -45,3 +45,4 @@ let bill = 275;
 
 let tip = bill >= 50 && bill <= 300 ? 15 : 20;
 console.log(`El valor de la factura es ${bill} con un propina de ${(tip * bill) / 100} y el total a pagar es de ${bill + ((tip * bill) / 100)}`)
+
